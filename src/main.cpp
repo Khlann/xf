@@ -2,6 +2,7 @@
 #include <sstream>
 #include <unistd.h>
 #include "LLog.h"
+#include "xiaohai_robot.h"
 
 int main(int argc, char **argv)
 {
@@ -9,6 +10,8 @@ int main(int argc, char **argv)
     std::stringstream log_data;
     log_data << u8"程序开始";
     main_log.AddLog(__LINE__, __FILE__, log_data.str().c_str(), log_data.str().size(), LLOG::TLogLevel::DEBUG);
+
+
 
     std::string input;
     do {
