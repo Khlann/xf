@@ -85,6 +85,10 @@ void DZ_RobotArm::WorkFun()
                 , RobotArmState_.iPause_, RobotArmState_.iEmergencyStop_
                 , RobotArmState_.iSaftyGuard_, RobotArmState_.iElectrify_
                 , RobotArmState_.iIsConnectToBox_, RobotArmState_.iBlendingDone_, RobotArmState_.iInpos_);
+
+    HRIF_ReadCurTCP(iBoxID_, iRobotID_, RobotArmState_.dTcp_X, RobotArmState_.dTcp_Y, RobotArmState_.dTcp_Z
+        , RobotArmState_.dTcp_Rx, RobotArmState_.dTcp_Ry, RobotArmState_.dTcp_Rz); // 读取当前TCP值
+    // HRIF_ReadCurTCP();   
 }
 
 bool DZ_RobotArm::Init(std::string ip, int port, int box_id, int robot_id)

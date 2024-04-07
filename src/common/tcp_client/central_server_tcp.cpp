@@ -65,6 +65,13 @@ void CentralServerTcp::DataEncapsulation(std::string &data, nlohmann::json &json
     data += crc8((const uint8_t *)json_obj.dump().c_str(), json_obj.dump().size());
 }
 
+bool CentralServerTcp::SendJsonData(nlohmann::json &json_obj)
+{
+    std::string send_data;
+    DataEncapsulation(send_data, json_obj);
+    return TcpClient::SendData(send_data.c_str(), send_data.size());
+}
+
 // 数据处理
 void CentralServerTcp::DataProcessing(const std::string &data)
 {
@@ -109,7 +116,7 @@ void CentralServerTcp::DataProcessing(const std::string &data)
 
 
     // 回复收到数据
-    DataEncapsulation(strReplyData, jsonReplyData);
+    // DataEncapsulation(strReplyData, jsonReplyData);
     // TcpServer_.SendData((int64_t)client_data.ClientInfo_.pClientBEv_, strReplyData);
 }
 

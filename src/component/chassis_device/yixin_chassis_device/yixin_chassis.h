@@ -31,13 +31,14 @@ class YiXinChassis  : public COMMON::WorkBase
 public:
     YiXinChassis(/* args */);
     ~YiXinChassis();
-
+public:
     void UdpDataCallBack(std::string& data);
     void WorkFun();
     void Move(int id);
     void DataAnalysis(std::string& data);
-private:
+public:
     COMMON::UDPClient UDPClient_;
+    YiXinChassisState ChassisState_;
 };
 
 }

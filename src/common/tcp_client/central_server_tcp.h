@@ -17,6 +17,7 @@ public:
     void DataProcessing(const std::string &data);
     bool CheckValidData(std::string &data, int &valid_start, int &valid_size);
     void DataEncapsulation(std::string &data, nlohmann::json &json_obj);
+    bool SendJsonData(nlohmann::json &json_obj);
 private:
     uint8_t crc8(const uint8_t *data, int size);
 

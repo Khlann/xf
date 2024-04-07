@@ -2,9 +2,9 @@
 
 namespace COMPONENT{
 
-YiXinChassis::YiXinChassis(/* args */)
+YiXinChassis::YiXinChassis()
 : COMMON::WorkBase(COMMON::WhileType::TIME)
-, UDPClient_("192.168.1.22", 9331, std::bind(&YiXinChassis::UdpDataCallBack, this, std::placeholders::_1))
+, UDPClient_("192.168.31.10", 9331, std::bind(&YiXinChassis::UdpDataCallBack, this, std::placeholders::_1))
 {
     COMMON::WorkBase::SetSleep(100);
     COMMON::WorkBase::ExecutionThread();
@@ -12,7 +12,6 @@ YiXinChassis::YiXinChassis(/* args */)
 
 YiXinChassis::~YiXinChassis()
 {
-
 }
 
 uint16_t PY_CRC_16_T8_X25_i(uint8_t *di, uint32_t len)
@@ -77,42 +76,46 @@ void YiXinChassis::UdpDataCallBack(std::string& data)
         if (data[4] == 0x4c && data[5] == 0x02)
         {   // 全局 ID
             uint32_t temp_id = littleEndianStringToUint32(&data.c_str()[8]);
+            ChassisState_.iCurrentStationID_ = temp_id;
         }
         else if (data[4] == 0x50 && data[5] == 0x02)
         {   // 设置运行
-            uint8_t temp = data.c_str()[8];
+            // uint8_t temp = data.c_str()[8];
         }
         else if (data[4] == 0x52 && data[5] == 0x02)
         {   // 节点序号 0×252
-            uint8_t temp = data.c_str()[8];
+            // uint8_t temp = data.c_str()[8];
         }
         else if (data[4] == 0x53 && data[5] == 0x02)
         {   // 路线类型 0×253
-            uint8_t temp = data.c_str()[8];
+            // uint8_t temp = data.c_str()[8];
         }
         else if (data[4] == 0x56 && data[5] == 0x02)
         {   // 节点属性 0×256
-            uint8_t temp = data.c_str()[8];
+            // uint8_t temp = data.c_str()[8];
         }
         else if (data[4] == 0x57 && data[5] == 0x02)
         {   // 动作编号 0×257
-            uint8_t temp = data.c_str()[8];
+            // uint8_t temp = data.c_str()[8];
         }
         else if (data[4] == 0x60 && data[5] == 0x02)
         {   // x坐标 0×260
             float temp_x = bytesToFloat((uint8_t*)&data.c_str()[8]);
+            ChassisState_.dX_ = temp_x;
         }
         else if (data[4] == 0x64 && data[5] == 0x02)
         {   // y坐标 0×264
             float temp_y = bytesToFloat((uint8_t*)&data.c_str()[8]);
+            ChassisState_.dX_ = temp_y;
         }
         else if (data[4] == 0x68 && data[5] == 0x02)
         {   // Theta角度 0×268
             float temp_Theta = bytesToFloat((uint8_t*)&data.c_str()[8]);
+            ChassisState_.dAngle_ = temp_Theta;
         }
         else if (data[4] == 0x6c && data[5] == 0x02)
         {   // 高度值 0×26c
-            float temp_h = bytesToFloat((uint8_t*)&data.c_str()[8]);
+            // float temp_h = bytesToFloat((uint8_t*)&data.c_str()[8]);
         }
         else if (data[4] == 0x90 && data[5] == 0x02)
         {   // 任务字 0×290
@@ -126,7 +129,7 @@ void YiXinChassis::UdpDataCallBack(std::string& data)
     }
     else if (data[2] == 0x04)   // 写回复
     {
-
+        ; // 暂时忽略写回复的消息
     }
     
 }

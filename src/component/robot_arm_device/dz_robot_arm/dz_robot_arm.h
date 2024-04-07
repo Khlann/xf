@@ -40,6 +40,13 @@ public:
     int iIsConnectToBox_;   // 电箱连接状态
     int iBlendingDone_; //路点运动状态
     int iInpos_;        // 到位状态
+
+    double dTcp_X = 0; 
+    double dTcp_Y = 0; 
+    double dTcp_Z = 0;
+    double dTcp_Rx = 0; 
+    double dTcp_Ry = 0; 
+    double dTcp_Rz = 0;
 };
 
 class DZ_RobotArm : public COMMON::WorkBase
