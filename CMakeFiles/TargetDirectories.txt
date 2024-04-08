@@ -1,0 +1,3 @@
+/home/khl/cnshe_robot_xiaohai/CMakeFiles/rebuild_cache.dir
+/home/khl/cnshe_robot_xiaohai/CMakeFiles/edit_cache.dir
+/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir
