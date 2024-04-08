@@ -60,6 +60,21 @@ bin文件夹下的bnf可以进行修改，具体修改语法可参考：https://
 
 ## 演示效果
 唤醒+命令词识别+播放相应的语音（或者执行相应的命令）
+
+## 可能遇到的报错
+1、fatal error: SDL2/SDL.h: 没有那个文件或目录
+~~~
+sudo apt-get update
+sudo apt-get install libsdl2-dev
+~~~
+参考：https://cloud.tencent.com.cn/developer/information/%E5%A6%82%E4%BD%95%E5%9C%A8linux%E4%B8%AD%E4%BD%BF%E7%94%A8SDL%EF%BC%9F
+
+2、fatal error: nlohmann/json.hpp: 没有那个文件或目录
+~~~
+sudo apt-get install nlohmann-json3-dev
+~~~
+参考：https://zhuanlan.zhihu.com/p/654250678
+
 ## Usage/Examples  
 ~~~javascr
   import Component from 'my-project'
