@@ -36,9 +36,10 @@
 int main()
 {
     XF xf;
+	xf.Audio_play("1.wav");
 
 	while(1)//可以改成线程
 	{
-		xf.Run();      
+		xf.Run();  //语音唤醒加命令词识别    
     }
 }

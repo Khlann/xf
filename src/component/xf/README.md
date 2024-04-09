@@ -75,9 +75,9 @@ sudo apt-get install nlohmann-json3-dev
 ~~~
 参考：https://zhuanlan.zhihu.com/p/654250678
 
-## Usage/Examples  
-~~~javascr
-  import Component from 'my-project'
+3、找不到串口ttyusb
+参考：https://www.jb51.net/LINUXjishu/799104.html
 
-  console.log("Hello World")
-~~~  
+sensor_serial:用来读传感器数据
+xf：用来作语音识别
+

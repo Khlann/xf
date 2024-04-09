@@ -4,7 +4,7 @@
 
 const char * ASR_RES_PATH        = "fo|res/asr/common.jet"; //离线语法识别资源路径
 const char * GRM_BUILD_PATH      = "res/asr/GrmBuilld"; //构建离线语法识别网络生成数据保存路径
-const char * GRM_FILE            = "/home/khl/cnshe_robot_xiaohai/bin/call.bnf"; //构建离线识别语法网络所用的语法文件
+const char * GRM_FILE            = "../config/call.bnf"; //构建离线识别语法网络所用的语法文件
 const char * LEX_NAME            = "contact"; //更新离线识别语法的contact槽（语法文件为此示例中使用的call.bnf）
 static char *g_result = NULL;
 static unsigned int g_buffersize = BUFFER_SIZE;
@@ -64,7 +64,7 @@ XF::~XF()
 
 bool XF::Serial_open()
 {
-	serial_fd = open("/dev/ttyUSB0", O_RDWR);
+	serial_fd = open("/dev/xfserial", O_RDWR);
 	if (serial_fd == -1) {
         return false;
     }
@@ -346,7 +346,7 @@ void XF::demo_mic(const char* session_begin_params)
 
 string XF::User_tts()
 {
-	const char* session_begin_params = "engine_type = local,voice_name=xiaoyan, text_encoding = UTF8, tts_res_path = fo|res/tts/xiaoyan.jet;fo|res/tts/common.jet, sample_rate = 16000, speed = 50, volume = 50, pitch = 50, rdn = 2";
+	const char* session_begin_params = "engine_type = local,voice_name=xiaoyan, text_encoding = UTF8, tts_res_path = fo|res/tts/xiaoyan.jet;fo|res/tts/common.jet, sample_rate = 16000, speed = 50, volume = 20, pitch = 50, rdn = 2";
 	string filename;
 	string text;
 	cout << "请输入合成的语音文件名称,请以.wav结束" << endl;

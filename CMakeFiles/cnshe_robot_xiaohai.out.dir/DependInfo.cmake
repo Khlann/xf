@@ -5,9 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/khl/cnshe_robot_xiaohai/src/component/xf/audio.c" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/audio.c.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/xf/linuxrec.c" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/linuxrec.c.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/xf/speech_recognizer.c" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/speech_recognizer.c.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/xf/audio.c" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/audio.c.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/xf/linuxrec.c" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/linuxrec.c.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/xf/speech_recognizer.c" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/speech_recognizer.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -29,20 +29,20 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "src/component/xf"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/khl/cnshe_robot_xiaohai/src/LLog/LLog.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/LLog/LLog.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/ini/iniconfig.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/ini/iniconfig.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/serial_communication/serial_communication.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/serial_communication/serial_communication.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/tcp_client/central_server_tcp.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/tcp_client/central_server_tcp.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/tcp_client/tcp_client.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/tcp_client/tcp_client.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/udp_client/udp_client.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/udp_client/udp_client.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/common/work_base/work_base.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/work_base/work_base.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/chassis_device/yixin_chassis_device/yixin_chassis.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/chassis_device/yixin_chassis_device/yixin_chassis.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/gas_detection/gas_detection.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/gas_detection/gas_detection.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/nuclear_radiation_measuring/nuclear_radiation_measuring.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/nuclear_radiation_measuring/nuclear_radiation_measuring.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/robot_arm_device/dz_robot_arm/dz_robot_arm.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/robot_arm_device/dz_robot_arm/dz_robot_arm.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/component/xf/xf.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/xf.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/main.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/main.cpp.o"
-  "/home/khl/cnshe_robot_xiaohai/src/robots/xiaohai_robot/xiaohai_robot.cpp" "/home/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/robots/xiaohai_robot/xiaohai_robot.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/LLog/LLog.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/LLog/LLog.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/ini/iniconfig.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/ini/iniconfig.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/serial_communication/serial_communication.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/serial_communication/serial_communication.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/tcp_client/central_server_tcp.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/tcp_client/central_server_tcp.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/tcp_client/tcp_client.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/tcp_client/tcp_client.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/udp_client/udp_client.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/udp_client/udp_client.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/common/work_base/work_base.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/common/work_base/work_base.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/chassis_device/yixin_chassis_device/yixin_chassis.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/chassis_device/yixin_chassis_device/yixin_chassis.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/gas_detection/gas_detection.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/gas_detection/gas_detection.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/nuclear_radiation_measuring/nuclear_radiation_measuring.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/nuclear_radiation_measuring/nuclear_radiation_measuring.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/robot_arm_device/dz_robot_arm/dz_robot_arm.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/robot_arm_device/dz_robot_arm/dz_robot_arm.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/component/xf/xf.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/component/xf/xf.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/main.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/main.cpp.o"
+  "/home/xh/khl/cnshe_robot_xiaohai/src/robots/xiaohai_robot/xiaohai_robot.cpp" "/home/xh/khl/cnshe_robot_xiaohai/CMakeFiles/cnshe_robot_xiaohai.out.dir/src/robots/xiaohai_robot/xiaohai_robot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

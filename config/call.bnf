@@ -1,0 +1,14 @@
+﻿#BNF+IAT 1.0 UTF-8;
+!grammar call;
+
+!slot <dialpre>;
+
+!slot <contact>;
+
+!start <callstart>;
+<callstart>:<dial>;
+<dial>:<dialpre><contact>;
+<dialpre>:实施!id(10001)|录制!id(20001)|操作!id(10001)|处理!id(10001)|完成!id(10001)|
+实行!id(10001)|施行!id(10001)|履行!id(10001)|落实!id(10001)|执行!id(10001)|动手!id(10001);
+
+<contact>:命令!id(10002)|指令!id(10003)|语音!id(20001);
